@@ -7,6 +7,10 @@ body {
   margin-bottom: 20px;
 }
 
+.process-table {
+  margin-top: 20px;
+}
+
 /*.dropdown-submenu {
     position: relative;
 }
