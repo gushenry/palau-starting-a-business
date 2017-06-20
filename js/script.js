@@ -7,7 +7,7 @@ $(document).ready(function(){
 });
 
 jQuery(document).ready(function($) {
-	$(".clickeable-row").click(function() {
+	$(".clickable-row").click(function() {
 		window.location = $(this).data("href");
 	});
 });
