@@ -5,3 +5,9 @@ $(document).ready(function(){
     e.preventDefault();
   });
 });
+
+jQuery(document).ready(function($) {
+	$(".clickeable-row").click(function() {
+		window.location = $(this).data("href");
+	});
+});
