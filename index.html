@@ -20,10 +20,10 @@
     <script src="js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+    <!-- [if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -93,10 +93,12 @@
       </div>
     </div>
 
+    <div id="topColor">
+    </div>
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide col-md-8 col-md-offset-2" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -125,16 +127,15 @@
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <a class="left carousel-control left-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <a class="right carousel-control right-control" href="#myCarousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
     </div><!-- /.carousel -->
-
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
@@ -179,18 +180,27 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <!-- <hr class="featurette-divider"> -->
 
       <!-- /END THE FEATURETTES -->
 
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017 <a href="http://palauchamber.com/" target="_blank">Palau Chamber of Commerce</a> &middot; <a href="http://palaugov.pw/" target="_blank">Federal Government Website</a>
-      </footer>
-
     </div><!-- /.container -->
+
+    <div id="bottomColor">
+
+      <div class="container">
+
+        <!-- FOOTER -->
+        <footer>
+          <p class="pull-right"><a href="#">Back to top</a></p>
+          <p>&copy; 2017 <a href="http://palauchamber.com/" target="_blank">Palau Chamber of Commerce</a> &middot; <a href="http://palaugov.pw/" target="_blank">Federal Government Website</a></p>
+        </footer>
+
+      </div>
+
+    </div>
+
+    
 
 
     <!-- Bootstrap core JavaScript
