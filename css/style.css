@@ -1,7 +1,7 @@
 body {
   padding-top: 0;
   padding-bottom: 0;
-  color: #5a5a5a;
+  color: #7A7A7A;
 }
 
 #navbar {
@@ -33,7 +33,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  height: 250px;
+  height: 200px;
   background-color: #67C1E5;
 }
 
@@ -48,6 +48,24 @@ body {
 }
 
 footer {
+  color: white;
+}
+
+#process-nav {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 60px;
   color: white;
 }
 
