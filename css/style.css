@@ -69,6 +69,13 @@ footer {
   color: white;
 }
 
+.title-1 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  color: white;
+}
+
+
 /*.dropdown-submenu {
     position: relative;
 }
@@ -78,3 +85,9 @@ footer {
     left: 100%;
     margin-top: -1px;
 }*/
+
+@media (max-width: 991px) {
+  .title {
+    color: #7A7A7A;
+  }
+}
