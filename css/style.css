@@ -19,8 +19,23 @@ body {
   box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.5);
 }
 
-.process-table {
+.secondary-nav-table {
   margin-top: 20px;
+}
+
+.number-column {
+  margin-left: 40px;
+  background-image: url(images/thin-circle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-left: 10px !important; 
+  padding-right: 10px !important;
+  text-align: center;
+}
+
+tr[data-href="#"] {
+  font-weight: bold;
 }
 
 #indexSpacer {
@@ -51,7 +66,7 @@ footer {
   color: white;
 }
 
-#process-nav {
+#secondary-nav-div {
   margin-top: 20px;
   background-color: white;
   border-radius: 8px;
