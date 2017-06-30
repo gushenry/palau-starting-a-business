@@ -1,8 +1,46 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
 body {
   padding-top: 0;
   padding-bottom: 0;
   color: #7A7A7A;
 }
+
+footer {
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+#topColor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 200px;
+  background-color: #67C1E5;
+}
+
+#bottomColor {
+  margin-top: 80px;
+  max-height: 150px;
+  padding-top: 110px;
+  padding-bottom: 20px;
+  background-image: url(images/bottom-color.svg);
+  background-position: bottom left;
+}
+
+@media (min-width: 992px) {
+  .content {
+    padding-left: 60px;
+  }
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
 
 #navbar {
   padding-left: 15px;
@@ -19,18 +57,18 @@ body {
   box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* CUSTOMIZE SECONDARY NAV TABLE
+-------------------------------------------------- */
 .secondary-nav-table {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .number-column {
-  margin-left: 40px;
-  background-image: url(images/thin-circle.svg);
+  font-size: 100%;
+  width: 30px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  padding-left: 10px !important; 
-  padding-right: 10px !important;
   text-align: center;
 }
 
@@ -38,39 +76,35 @@ tr[data-href="#"] {
   font-weight: bold;
 }
 
-#indexSpacer {
-  /*height: 500px;*/
-  margin-bottom: 60px;
+/* Using !important to override Bootstrap template Less usage*/
+
+td:first-child {
+  width: 15px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
-#topColor {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 200px;
-  background-color: #67C1E5;
+td:last-child {
+  padding-right: 0px !important;
+  width: 150px !important;
 }
 
-#bottomColor {
-  margin-top: 80px;
-  max-height: 150px;
-  padding-top: 110px;
-  padding-bottom: 10px;
-  background-image: url(images/bottom-color.svg);
-  background-position: bottom left;
-  /*background-color: #67C1E5;*/
-}
-
-footer {
-  color: white;
+td {
+  vertical-align: middle !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 35px;
 }
 
 #secondary-nav-div {
   margin-top: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+#secondary-nav-div h3 {
+  padding-top: 10px;
 }
 
 .row {
@@ -79,30 +113,69 @@ footer {
 }
 
 .title {
-  margin-top: 30px;
-  margin-bottom: 60px;
-  color: white;
+  color: #7A7A7A;
 }
 
-.title-1 {
-  margin-top: 30px;
-  margin-bottom: 60px;
-  color: white;
-}
+@media (min-width: 992px) {
+  .secondary-nav-table {
+    margin-top: 20px;
+  }
 
+  .number-column {
+    font-size: 150%;
+    width: 30px;
+    background-image: url(images/thin-circle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+  }
 
-/*.dropdown-submenu {
-    position: relative;
-}
+  tr[data-href="#"] {
+    font-weight: bold;
+  }
 
-.dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -1px;
-}*/
+  tr[data-href="#"] .number-column {
+    background-image: url(images/thick-circle.svg);
+  }
 
-@media (max-width: 991px) {
+  /* Using !important to override Bootstrap template Less usage*/
+
+  td:first-child {
+    width: 15px !important;
+  }
+
+  td:last-child {
+    padding-right: 0px !important;
+    width: 150px !important;
+  }
+
+  td {
+    vertical-align: middle !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 50px;
+  }
+
+  #secondary-nav-div {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  #secondary-nav-div h3 {
+    padding-top: 0;
+  }
+
+  .row {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .title {
-    color: #7A7A7A;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: white;
   }
 }

@@ -26,10 +26,12 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
+
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
 }
+
 .navbar-wrapper .navbar .container {
   width: auto;
 }
@@ -154,5 +156,27 @@ body {
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .carousel {
+    /*height: 400px;*/
+    margin-top: 50px;
+    margin-bottom: 40px;
+    /*padding-left: 0;
+    padding-right: 0;*/
+    border-radius: 0px;
+    box-shadow: 3px 3px 6px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .left-control {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .right-control {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
   }
 }
