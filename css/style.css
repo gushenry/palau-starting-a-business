@@ -76,7 +76,7 @@ tr[data-href="#"] {
   font-weight: bold;
 }
 
-/* Using !important to override Bootstrap template Less usage*/
+/* Using !important to override Bootstrap template Less usage */
 
 td:first-child {
   width: 15px !important;
@@ -97,14 +97,16 @@ td {
 }
 
 #secondary-nav-div {
-  margin-top: 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 #secondary-nav-div h3 {
-  padding-top: 10px;
+  margin-top: 0px;
 }
 
 .row {
@@ -119,6 +121,7 @@ td {
 @media (min-width: 992px) {
   .secondary-nav-table {
     margin-top: 20px;
+    margin-bottom: 0px;
   }
 
   .number-column {
@@ -139,7 +142,7 @@ td {
     background-image: url(images/thick-circle.svg);
   }
 
-  /* Using !important to override Bootstrap template Less usage*/
+  /* Using !important to override Bootstrap template Less usage */
 
   td:first-child {
     width: 15px !important;
@@ -167,6 +170,18 @@ td {
   #secondary-nav-div h3 {
     padding-top: 0;
   }
+
+  .contact-info-left {
+    margin-top: 30px;
+  }
+
+  .contact-info-left span {
+    margin-left: 20px;
+  }
+
+  /*.phone-number {
+    margin-left: 20px;
+  }*/
 
   .row {
     padding-left: 15px;
