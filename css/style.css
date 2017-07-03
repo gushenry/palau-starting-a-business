@@ -118,6 +118,40 @@ td {
   color: #7A7A7A;
 }
 
+.step-container {
+  display: table;
+  vertical-align: middle;
+}
+
+.step-number {
+  min-width: 65px;
+  text-align: center;
+  font-size: 300%;
+  display: table-cell;
+  margin-top: auto;
+  margin-right: 25px;
+  margin-bottom: auto;
+  margin-left: 25px;
+  vertical-align: middle;
+}
+
+.step-number span {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.step-content {
+  padding-left: 20px;
+  border-left-style: solid;
+  border-left-color: lightgrey;
+  border-left-width: 1px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 @media (min-width: 992px) {
   .secondary-nav-table {
     margin-top: 20px;
