@@ -5,6 +5,7 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   color: #7A7A7A;
+  /*font-size: 200% !important;*/
 }
 
 footer {
@@ -30,7 +31,7 @@ footer p {
   padding-top: 110px;
   padding-bottom: 20px;
   background-image: url(images/bottom-color.svg);
-  background-position: bottom left;
+  background-position: bottom center;
 }
 
 @media (min-width: 992px) {
@@ -59,13 +60,10 @@ footer p {
 
 /* CUSTOMIZE SECONDARY NAV TABLE
 -------------------------------------------------- */
-.secondary-nav-table {
-  margin-top: 10px;
-}
 
 .number-column {
   font-size: 100%;
-  width: 30px;
+  width: 20px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -79,9 +77,7 @@ tr[data-href="#"] {
 /* Using !important to override Bootstrap template Less usage */
 
 td:first-child {
-  width: 15px !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  display: none;
 }
 
 td:last-child {
@@ -99,7 +95,7 @@ td {
 #secondary-nav-div {
   margin-left: -15px;
   margin-right: -15px;
-  padding: 15px;
+  padding: 15px 15px 5px 15px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.5);
@@ -109,23 +105,53 @@ td {
   margin-top: 0px;
 }
 
+.secondary-nav-table {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.state-applications-table {
+  margin-top: 50px;
+}
+
+.last-row {
+  border-bottom-style: solid;
+  border-bottom-color: lightgrey;
+  border-bottom-width: 1px;
+}
+
+.contact-info-left {
+  display: none;
+}
+
 .row {
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .title {
+  color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.process-title {
   color: #7A7A7A;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 .step-container {
   display: table;
   vertical-align: middle;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 25px;
 }
 
 .step-number {
-  min-width: 65px;
-  text-align: center;
+  min-width: 55px;
+  /*text-align: center;*/
   font-size: 300%;
   display: table-cell;
   margin-top: auto;
@@ -138,7 +164,7 @@ td {
 .step-number span {
   display: table-cell !important;
   vertical-align: middle !important;
-  text-align: center !important;
+  /*text-align: center !important;*/
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -150,13 +176,10 @@ td {
   border-left-width: 1px;
   display: table-cell;
   vertical-align: middle;
+  height: 60px;
 }
 
 @media (min-width: 992px) {
-  .secondary-nav-table {
-    margin-top: 20px;
-    margin-bottom: 0px;
-  }
 
   .number-column {
     font-size: 150%;
@@ -166,6 +189,10 @@ td {
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
+  }
+
+  .clickable-row {
+    cursor: default;
   }
 
   tr[data-href="#"] {
@@ -205,12 +232,24 @@ td {
     padding-top: 0;
   }
 
+  td:first-child {
+    display: table-cell;
+    width: 15px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   .contact-info-left {
+    display: block;
     margin-top: 30px;
   }
 
   .contact-info-left span {
     margin-left: 20px;
+  }
+
+  .contact-info-bottom {
+    display: none;
   }
 
   /*.phone-number {
@@ -222,9 +261,17 @@ td {
     padding-right: 15px;
   }
 
-  .title {
+  .content h3 {
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
+  }
+
+  .process-title {
     color: white;
+  }
+
+  .logo {
+    width: 30%;
+    margin: 0 0 15px 15px;
   }
 }
