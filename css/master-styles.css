@@ -5,6 +5,7 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   color: #7A7A7A;
+  overflow: scroll;
   /*font-size: 200% !important;*/
 }
 
