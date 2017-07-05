@@ -31,8 +31,9 @@ footer p {
   max-height: 150px;
   padding-top: 110px;
   padding-bottom: 20px;
-  background-image: url(images/bottom-color.svg);
+  /*background-image: url(images/bottom-color.svg);*/
   background-position: bottom center;
+  background-color: #67C1E5;
 }
 
 @media (min-width: 992px) {
