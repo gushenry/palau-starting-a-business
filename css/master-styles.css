@@ -1,0 +1,278 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+body {
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #7A7A7A;
+  overflow-y: scroll;
+  /*font-size: 200% !important;*/
+}
+
+footer {
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+#topColor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 200px;
+  background-color: #67C1E5;
+}
+
+#bottomColor {
+  margin-top: 80px;
+  max-height: 150px;
+  padding-top: 110px;
+  padding-bottom: 20px;
+  background-image: url(images/bottom-color.svg);
+  background-position: bottom center;
+}
+
+@media (min-width: 992px) {
+  .content {
+    padding-left: 60px;
+  }
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+#navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.dropdown-menu {
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* CUSTOMIZE SECONDARY NAV TABLE
+-------------------------------------------------- */
+
+.number-column {
+  font-size: 100%;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+
+tr[data-href="#"] {
+  font-weight: bold;
+}
+
+/* Using !important to override Bootstrap template Less usage */
+
+td:first-child {
+  display: none;
+}
+
+td:last-child {
+  padding-right: 0px !important;
+  width: 150px !important;
+}
+
+td {
+  vertical-align: middle !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 35px;
+}
+
+#secondary-nav-div {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px 15px 5px 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+#secondary-nav-div h3 {
+  margin-top: 0px;
+}
+
+.secondary-nav-table {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.state-applications-table {
+  margin-top: 50px;
+}
+
+.last-row {
+  border-bottom-style: solid;
+  border-bottom-color: lightgrey;
+  border-bottom-width: 1px;
+}
+
+.contact-info-left {
+  display: none;
+}
+
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title {
+  color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.process-title {
+  color: #7A7A7A;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.step-container {
+  display: table;
+  vertical-align: middle;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+}
+
+.step-number {
+  min-width: 55px;
+  /*text-align: center;*/
+  font-size: 300%;
+  display: table-cell;
+  margin-top: auto;
+  margin-right: 25px;
+  margin-bottom: auto;
+  margin-left: 25px;
+  vertical-align: middle;
+}
+
+.step-number span {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  /*text-align: center !important;*/
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.step-content {
+  padding-left: 20px;
+  border-left-style: solid;
+  border-left-color: lightgrey;
+  border-left-width: 1px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 60px;
+}
+
+@media (min-width: 992px) {
+
+  .number-column {
+    font-size: 150%;
+    width: 30px;
+    background-image: url(images/thin-circle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+  }
+
+  .clickable-row {
+    cursor: default;
+  }
+
+  tr[data-href="#"] {
+    font-weight: bold;
+  }
+
+  tr[data-href="#"] .number-column {
+    background-image: url(images/thick-circle.svg);
+  }
+
+  /* Using !important to override Bootstrap template Less usage */
+
+  td:first-child {
+    width: 15px !important;
+  }
+
+  td:last-child {
+    padding-right: 0px !important;
+    width: 150px !important;
+  }
+
+  td {
+    vertical-align: middle !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: 50px;
+  }
+
+  #secondary-nav-div {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  #secondary-nav-div h3 {
+    padding-top: 0;
+  }
+
+  td:first-child {
+    display: table-cell;
+    width: 15px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .contact-info-left {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .contact-info-left span {
+    margin-left: 20px;
+  }
+
+  .contact-info-bottom {
+    display: none;
+  }
+
+  /*.phone-number {
+    margin-left: 20px;
+  }*/
+
+  .row {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .content h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .process-title {
+    color: white;
+  }
+
+  .logo {
+    width: 30%;
+    margin: 0 0 15px 15px;
+  }
+}
